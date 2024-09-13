@@ -3,11 +3,13 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import EditUsers from "./Screen/EditUsers";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <EditUsers />
   },
 ]);
 
