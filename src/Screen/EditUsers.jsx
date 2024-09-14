@@ -30,6 +30,11 @@ function EditUserForm(){
                             placeholder={'Oleg Schevchenko'}
                         />
                     </label>
+
+                    {user &&
+                        <div className="form">
+                            <h4>User Information</h4>
+                        </div> }
                 </div>
             </div>
 }
