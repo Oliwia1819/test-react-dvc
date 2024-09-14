@@ -1,13 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Select from "react-select";
 import {users} from "../DataBase/Users";
-
-let a = users.map(e => ({value: e.name, label : e.name}));
-
-const MyComponent = () => (
-    <Select options={a} placeholder={'Oleg Schevchenko'}/>
-);
+import {departments} from "../DataBase/Department";
 
 
 export default function EditUsers(){
@@ -19,13 +14,21 @@ export default function EditUsers(){
 }
 
 function EditUserForm(){
+    const [user, setUser] = useState(null);
 
     return <div className="edit_user_form">
                 <h1>Edit Users</h1>
                 <div className="user_name">
                     <label>
                         User
-                        <MyComponent />  
+                        <Select 
+                            value={user} 
+                            onChange={setUser} 
+                            options={users} 
+                            getOptionLabel={user=>user.name} 
+                            getOptionValue={user => user.name} 
+                            placeholder={'Oleg Schevchenko'}
+                        />
                     </label>
                 </div>
             </div>
