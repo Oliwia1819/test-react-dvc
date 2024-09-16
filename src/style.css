@@ -14,6 +14,7 @@ header{
     justify-content: center;
     height: 88px;
     border-bottom: 1px solid #000;
+    flex: none;
 }
 
 header a{
@@ -33,22 +34,58 @@ header a{
 header a.active{
     background-color: #C4C4C4;
 }
-.edit_user_form{
-    height: 100%;
-    border: 1px solid #000;
-    margin: 80px 100px;   
+.edit_users_screen{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
-h1{
+.edit_user_form{
+    border: 1px solid #000;
+    margin: 80px 100px;
+    flex: 1 1 100%;   
+}
+.edit_user_form_wrap{
+    padding: 60px 80px 80px 80px;
+}
+h2{
     font-family: "Karla", sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
     text-align: center;
-    margin-top: 60px;
+    margin-bottom: 80px;
     text-transform: uppercase;
 }
 .user_name{
     width: 500px;
     height: 48px;
+    border-radius: 0px;
+}    
+input{
+    display: block;
+    border: 1px solid #C4C4C4;
+    outline: none;
+    width: 500px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20;
+    color: #5E626B;
+    padding: 12px 0 12px 24px;
 }
-
+span{
+    display: none;
+}
+label{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #5E626B;
+    margin: 4px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 60px 0 40px;
+}
