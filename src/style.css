@@ -71,7 +71,7 @@ input{
     font-weight: 400;
     line-height: 20;
     color: #5E626B;
-    padding: 12px 0 12px 24px;
+    margin-bottom: 40px;
 }
 span{
     display: none;

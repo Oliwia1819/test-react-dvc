@@ -55,15 +55,17 @@ function EditUserForm(){
 
                                 <label >
                                     Department
-                                    <Select options={departments} getOptionLabel={dep => dep.name} value={user?.department} />
+                                    <div className="user_name">
+                                        <Select 
+                                            options={departments} 
+                                            getOptionLabel={dep => dep.name} 
+                                            value={user?.department} 
+                                        />
+                                    </div>
                                 </label>
-                                
+
+
                             </div> }
-
-                    
-                            
-                        
-
                 </div>
             </div>
 }
