@@ -89,3 +89,6 @@ h3{
     line-height: 32px;
     margin: 60px 0 40px;
 }
+.user_data{
+    display: flex;
+}
