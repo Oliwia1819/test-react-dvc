@@ -89,7 +89,17 @@ function EditUserForm(){
                                         />
                                     </div>
                                 </label>
-                                
+                                <label >
+                                    Status
+                                    <div className="user_name">
+                                        <Select 
+                                            options={statuses} 
+                                            getOptionLabel={st => st.name} 
+                                            value={status}
+                                            onChange={setStatus} 
+                                        />
+                                    </div>
+                                </label>
                                 </div>
                             </div> }
                 </div>
