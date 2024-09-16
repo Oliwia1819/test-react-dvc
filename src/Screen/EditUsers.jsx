@@ -28,7 +28,7 @@ function EditUserForm(){
                         <label>
                             User
                             <div className="user_name">
-                                
+
                             <Select 
                                 value={user} 
                                 onChange={userUpdate} 
@@ -39,6 +39,7 @@ function EditUserForm(){
                             />
                             </div>
                         </label>
+
 
                         {user &&
                             <div className="form">
@@ -51,7 +52,18 @@ function EditUserForm(){
                                         value={fullName} 
                                     />
                                 </label>
+
+                                <label >
+                                    Department
+                                    <Select options={departments} getOptionLabel={dep => dep.name} value={user?.department} />
+                                </label>
+                                
                             </div> }
+
+                    
+                            
+                        
+
                 </div>
             </div>
 }
